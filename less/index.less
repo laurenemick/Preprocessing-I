@@ -89,7 +89,6 @@ section {
 	font-size: 1.2rem;
 }
 
-
 // header 
 header {
 	.section-body();
@@ -189,12 +188,28 @@ header {
 
 
 // WORK HISTORY SECTION
-#work-history {
+.work-history {
+	margin: @main-margin;
+	.section-titles();
 
 	h2 {
-		.section-titles() 
+		padding-bottom: 2%;
 	}
-} // end of work-history
+	.big-container {
+		display: flex;
+		justify-content: space-between;
+		.section-body();
+		border: 1px solid @accent-background-color;
+
+		div {
+			border: 1px solid @accent-background-color;
+
+			h3 {
+				font-weight: bold;
+			}
+		} // div end
+	} // end of big-container
+} // end of work-history 
 
 
 // FOOTER

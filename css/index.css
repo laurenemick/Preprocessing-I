@@ -249,10 +249,28 @@ header nav a:hover {
 .section-one .stuff-im-good-at .list p:last-child {
   border-bottom: none;
 }
-#work-history h2 {
+.work-history {
+  margin: 0 6%;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 1.6rem;
+}
+.work-history h2 {
+  padding-bottom: 2%;
+}
+.work-history .big-container {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  border: 1px solid grey;
+}
+.work-history .big-container div {
+  border: 1px solid grey;
+}
+.work-history .big-container div h3 {
+  font-weight: bold;
 }
 footer {
   background-color: grey;
