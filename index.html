@@ -1,14 +1,3 @@
-<!-- 
-Content: Navigation - Build a simple navigation with 4 items of your choosing
-Content: Intro - Have a short introduction as to why you would be a good hire
-Content: Skills - Showcase a list of skills you have somewhere on your resume
-Content: Work History - Showcase your work history somewhere on your resume
-Content: Contact - Provide some way a potential employer could contact you. Phone number, email, or a full on contact form (doesn't have to work)
-Variables: Incorporate variables in your project for color and font stacks.
-Nesting: Every selector should be nested inside the main container. Avoid having global styles unless they are element level.
-Mixins: Create 2 mixins of your choosing. Hint: It's super helpful to use flexbox properties in mixins
-Mobile: Use nested-at rules to provide a mobile version of your resume. Use 500px as a max-width for mobile. -->
-
 <!doctype html>
 
 <html lang="en">
@@ -42,13 +31,55 @@ Mobile: Use nested-at rules to provide a mobile version of your resume. Use 500p
     <button type="button">Lets Team Up</button>
   </section>
 
-  <section class="">
+  <section class="section-one">
+    <div class="listen-up">
+      <h2>Listen up...</h2>
+      <p>Vel neque sequi facilis, saepe aliquid tenetur. Exercitationem dolor consequatur nisi alias officiis nulla vero! Eos tenetur quis facilis odit aspernatur blanditiis? Cusque, corporis quis! Nostrum earum aperiam aliquam consequuntur vel illo officiis necessitatibus ratione ullam, quas neque saepe soluta, architecto recusandae nobis. Atque.</p>
+    </div>
+    <div class="stuff-im-good-at">
+      <h2>Stuff I'm good at:</h2>
+      <div class="list">
+        <p>item 1</p>
+        <p>item 2</p>
+        <p>item 3</p>
+        <p>item 4</p>
+      </div>
+    </div>
+  </section>
 
+  <section id="work-history">
+    <h2>Work History</h2>
+    <div class="big-container">
+      <div class="table-titles">
+        <h2>Years</h2>
+        <h2>Company</h2>
+        <h2>Title</h2>
+        <h2>Tech Used</h2>
+      </div>
+      <div class="Apple">
+        <p>1</p>
+        <p>Apple</p>
+        <p>Software Engineer</p>
+        <p>Swift</p>
+      </div>
+      <div class="Microsoft">
+        <p>2</p>
+        <p>Microsoft</p>
+        <p>Software Engineer</p>
+        <p>Swift</p>
+      </div>
+      <div class="Amazon">
+        <p>3</p>
+        <p>Amazon</p>
+        <p>Software Engineer</p>
+        <p>Swift</p>
+      </div>
+    </div>
   </section>
 
   <footer>
     <p>Copywright Awesomeness 2020</p>
   </footer>
-  
+
 </body>
 </html>
