@@ -155,13 +155,25 @@ html,
 body {
   height: 100%;
 }
-section {
-  padding: 3% 0;
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
 }
-header {
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+p,
+a,
+button,
+h3 {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
+}
+header {
   padding: 2% 2%;
 }
 header nav {
@@ -178,20 +190,14 @@ header nav a:hover {
 }
 .intro-content {
   background-color: lightgrey;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 1.2rem;
   padding: 6% 4%;
   border-radius: 5px;
   margin: 0 6%;
 }
 .intro-content h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
   padding: 1% 0 3% 0;
 }
-.intro-content h2 {
+.intro-content h3 {
   padding-bottom: 3%;
 }
 .intro-content p {
@@ -204,28 +210,18 @@ header nav a:hover {
   background-color: grey;
   color: white;
   border-radius: 5px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 1.2rem;
 }
 .intro-content button:hover {
   color: orange;
 }
 .section-one {
   margin: 0 6%;
+  margin-top: 4%;
   display: flex;
   justify-content: space-around;
 }
 .section-one h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 1.6rem;
   padding-bottom: 2%;
-}
-.section-one p {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 1.2rem;
 }
 .section-one .listen-up {
   width: 50%;
@@ -239,48 +235,88 @@ header nav a:hover {
   padding-left: 2%;
 }
 .section-one .stuff-im-good-at .list {
-  border: 1px solid grey;
+  border: 1px solid black;
 }
 .section-one .stuff-im-good-at .list p {
   text-align: center;
   padding: 2% 0;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid black;
 }
 .section-one .stuff-im-good-at .list p:last-child {
   border-bottom: none;
 }
 .work-history {
   margin: 0 6%;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 1.6rem;
-}
-.work-history h2 {
+  margin-top: 4%;
   padding-bottom: 2%;
 }
-.work-history .big-container {
+.table {
   display: flex;
-  justify-content: space-between;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 1.2rem;
-  border: 1px solid grey;
+  margin: 0 6%;
 }
-.work-history .big-container div {
-  border: 1px solid grey;
+.table .column-one {
+  width: 25%;
 }
-.work-history .big-container div h3 {
-  font-weight: bold;
+.table .column-one p {
+  border-top: 1px solid grey;
+  padding: 6%;
+}
+.table .column-one p:last-child {
+  border-bottom: 1px solid grey;
+}
+.table .column-one .grey {
+  color: white;
+  background-color: grey;
+}
+.table .column-two {
+  width: 25%;
+}
+.table .column-two p {
+  border-top: 1px solid grey;
+  padding: 6%;
+}
+.table .column-two p:last-child {
+  border-bottom: 1px solid grey;
+}
+.table .column-two .grey {
+  color: white;
+  background-color: grey;
+}
+.table .column-three {
+  width: 25%;
+}
+.table .column-three p {
+  border-top: 1px solid grey;
+  padding: 6%;
+}
+.table .column-three p:last-child {
+  border-bottom: 1px solid grey;
+}
+.table .column-three .grey {
+  color: white;
+  background-color: grey;
+}
+.table .column-four {
+  width: 25%;
+}
+.table .column-four p {
+  border-top: 1px solid grey;
+  padding: 6%;
+}
+.table .column-four p:last-child {
+  border-bottom: 1px solid grey;
+}
+.table .column-four .grey {
+  color: white;
+  background-color: grey;
 }
 footer {
   background-color: grey;
-  margin: 0 4%;
+  margin-top: 4%;
+  margin: 4% 4% 0 4%;
   padding: 6%;
 }
 footer p {
   text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 1.2rem;
   color: white;
 }
