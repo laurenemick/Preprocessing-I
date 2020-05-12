@@ -180,10 +180,26 @@ header nav {
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    margin: 0 6%;
+  }
+}
 header nav a {
   color: black;
   text-decoration: none;
   padding-right: 6%;
+}
+@media (max-width: 500px) {
+  header nav a {
+    padding: 1% 4%;
+    color: white;
+    background-color: grey;
+    margin: 2% 0;
+    border-radius: 5px;
+    text-align: center;
+  }
 }
 header nav a:hover {
   color: orange;
@@ -207,8 +223,8 @@ header nav a:hover {
 }
 .intro-content button {
   padding: 1% 3%;
-  background-color: grey;
   color: white;
+  background-color: grey;
   border-radius: 5px;
 }
 .intro-content button:hover {
@@ -220,6 +236,11 @@ header nav a:hover {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .section-one {
+    flex-direction: column;
+  }
+}
 .section-one h2 {
   padding-bottom: 2%;
 }
@@ -227,12 +248,25 @@ header nav a:hover {
   width: 50%;
   padding-right: 2%;
 }
+@media (max-width: 500px) {
+  .section-one .listen-up {
+    width: 100%;
+    padding: 4% 0;
+  }
+}
 .section-one .listen-up p {
   line-height: 1.2;
 }
 .section-one .stuff-im-good-at {
   width: 50%;
   padding-left: 2%;
+}
+@media (max-width: 500px) {
+  .section-one .stuff-im-good-at {
+    width: 100%;
+    margin: 4% 0;
+    padding-left: none;
+  }
 }
 .section-one .stuff-im-good-at .list {
   border: 1px solid black;
@@ -254,8 +288,20 @@ header nav a:hover {
   display: flex;
   margin: 0 6%;
 }
+@media (max-width: 500px) {
+  .table {
+    flex-direction: column;
+  }
+}
 .table .column-one {
   width: 25%;
+}
+@media (max-width: 500px) {
+  .table .column-one {
+    width: 100%;
+    border: 1px solid grey;
+    margin-bottom: 4%;
+  }
 }
 .table .column-one p {
   border-top: 1px solid grey;
@@ -271,6 +317,13 @@ header nav a:hover {
 .table .column-two {
   width: 25%;
 }
+@media (max-width: 500px) {
+  .table .column-two {
+    width: 100%;
+    border: 1px solid grey;
+    margin-bottom: 4%;
+  }
+}
 .table .column-two p {
   border-top: 1px solid grey;
   padding: 6%;
@@ -284,6 +337,13 @@ header nav a:hover {
 }
 .table .column-three {
   width: 25%;
+}
+@media (max-width: 500px) {
+  .table .column-three {
+    width: 100%;
+    border: 1px solid grey;
+    margin-bottom: 4%;
+  }
 }
 .table .column-three p {
   border-top: 1px solid grey;
@@ -299,6 +359,13 @@ header nav a:hover {
 .table .column-four {
   width: 25%;
 }
+@media (max-width: 500px) {
+  .table .column-four {
+    width: 100%;
+    border: 1px solid grey;
+    margin-bottom: 4%;
+  }
+}
 .table .column-four p {
   border-top: 1px solid grey;
   padding: 6%;
@@ -313,8 +380,14 @@ header nav a:hover {
 footer {
   background-color: grey;
   margin-top: 4%;
-  margin: 4% 4% 0 4%;
+  margin: 4%;
   padding: 6%;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: 8%;
+    padding: 10%;
+  }
 }
 footer p {
   text-align: center;
