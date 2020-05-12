@@ -1,1 +1,396 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD7g4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPN-Co.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwPIsaqE.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+p,
+a,
+button,
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+header {
+  padding: 2% 2%;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    margin: 0 6%;
+  }
+}
+header nav a {
+  color: black;
+  text-decoration: none;
+  padding-right: 6%;
+}
+@media (max-width: 500px) {
+  header nav a {
+    padding: 1% 4%;
+    color: white;
+    background-color: grey;
+    margin: 2% 0;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+header nav a:hover {
+  color: orange;
+}
+.intro-content {
+  background-color: lightgrey;
+  padding: 6% 4%;
+  border-radius: 5px;
+  margin: 0 6%;
+}
+.intro-content h1 {
+  padding: 1% 0 3% 0;
+}
+.intro-content h3 {
+  padding-bottom: 3%;
+}
+.intro-content p {
+  border-top: 1px solid grey;
+  padding: 3% 0;
+  line-height: 1.2;
+}
+.intro-content button {
+  padding: 1% 3%;
+  color: white;
+  background-color: grey;
+  border-radius: 5px;
+}
+.intro-content button:hover {
+  color: orange;
+}
+.section-one {
+  margin: 0 6%;
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .section-one {
+    flex-direction: column;
+  }
+}
+.section-one h2 {
+  padding-bottom: 2%;
+}
+.section-one .listen-up {
+  width: 50%;
+  padding-right: 2%;
+}
+@media (max-width: 500px) {
+  .section-one .listen-up {
+    width: 100%;
+    padding: 4% 0;
+  }
+}
+.section-one .listen-up p {
+  line-height: 1.2;
+}
+.section-one .stuff-im-good-at {
+  width: 50%;
+  padding-left: 2%;
+}
+@media (max-width: 500px) {
+  .section-one .stuff-im-good-at {
+    width: 100%;
+    margin: 4% 0;
+    padding-left: none;
+  }
+}
+.section-one .stuff-im-good-at .list {
+  border: 1px solid black;
+}
+.section-one .stuff-im-good-at .list p {
+  text-align: center;
+  padding: 2% 0;
+  border-bottom: 1px solid black;
+}
+.section-one .stuff-im-good-at .list p:last-child {
+  border-bottom: none;
+}
+.work-history {
+  margin: 0 6%;
+  margin-top: 4%;
+  padding-bottom: 2%;
+}
+.table {
+  display: flex;
+  margin: 0 6%;
+}
+@media (max-width: 500px) {
+  .table {
+    flex-direction: column;
+  }
+}
+.table .column-one {
+  width: 25%;
+}
+@media (max-width: 500px) {
+  .table .column-one {
+    width: 100%;
+    border: 1px solid grey;
+    margin-bottom: 4%;
+  }
+}
+.table .column-one p {
+  border-top: 1px solid grey;
+  padding: 6%;
+}
+.table .column-one p:last-child {
+  border-bottom: 1px solid grey;
+}
+.table .column-one .grey {
+  color: white;
+  background-color: grey;
+}
+.table .column-two {
+  width: 25%;
+}
+@media (max-width: 500px) {
+  .table .column-two {
+    width: 100%;
+    border: 1px solid grey;
+    margin-bottom: 4%;
+  }
+}
+.table .column-two p {
+  border-top: 1px solid grey;
+  padding: 6%;
+}
+.table .column-two p:last-child {
+  border-bottom: 1px solid grey;
+}
+.table .column-two .grey {
+  color: white;
+  background-color: grey;
+}
+.table .column-three {
+  width: 25%;
+}
+@media (max-width: 500px) {
+  .table .column-three {
+    width: 100%;
+    border: 1px solid grey;
+    margin-bottom: 4%;
+  }
+}
+.table .column-three p {
+  border-top: 1px solid grey;
+  padding: 6%;
+}
+.table .column-three p:last-child {
+  border-bottom: 1px solid grey;
+}
+.table .column-three .grey {
+  color: white;
+  background-color: grey;
+}
+.table .column-four {
+  width: 25%;
+}
+@media (max-width: 500px) {
+  .table .column-four {
+    width: 100%;
+    border: 1px solid grey;
+    margin-bottom: 4%;
+  }
+}
+.table .column-four p {
+  border-top: 1px solid grey;
+  padding: 6%;
+}
+.table .column-four p:last-child {
+  border-bottom: 1px solid grey;
+}
+.table .column-four .grey {
+  color: white;
+  background-color: grey;
+}
+footer {
+  background-color: grey;
+  margin-top: 4%;
+  margin: 4%;
+  padding: 6%;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: 8%;
+    padding: 10%;
+  }
+}
+footer p {
+  text-align: center;
+  color: white;
+  line-height: 1.2;
+}

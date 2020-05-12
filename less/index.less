@@ -4,6 +4,8 @@
    License: none (public domain)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@400;600&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,6 +31,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
@@ -50,10 +53,281 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 1.6rem;
+}
+
+p, a, button, h3 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+}
+
+// variables
+@body-background-color: lightgrey;
+@accent-background-color: grey;
+@main-font-color: black;
+@accent-font-color: white;
+@hover-color: orange;
+@main-margin: 0 6%;
+@border-black: 1px solid black;
+@border-grey: 1px solid grey;
+
+//mixins
+.table-grey() {
+	color:@accent-font-color;
+	background-color: @accent-background-color;
+}
+.table-grey-border() {
+	border-top: @border-grey;
+	padding: 6%;
+}
+
+
+// header 
+header {
+	padding: 2% 2%;
+
+	nav {
+		display: flex;
+		justify-content: flex-end;
+
+		@media (max-width: 500px) {
+			flex-direction: column;
+			margin: @main-margin;
+		}
+		a {
+			color: @main-font-color;
+			text-decoration: none;
+			padding-right: 6%;
+
+			@media (max-width: 500px) {
+				padding: 1% 4%;
+				.table-grey();
+				margin: 2% 0;
+				border-radius: 5px;
+				text-align: center;
+			}
+
+			&:hover {
+				color: @hover-color;
+			}
+		} // end of a
+	} // end of nav
+} // end of header
+
+
+// INTRO SECTION
+.intro-content {
+	background-color: @body-background-color;
+	padding: 6% 4%;
+	border-radius: 5px;
+	margin: @main-margin;
+
+	h1 {
+		padding: 1% 0 3% 0;
+	}
+	h3 {
+		padding-bottom: 3%;
+	}
+	p {
+		border-top: @border-grey;
+		padding: 3% 0;
+		line-height: 1.2;
+	} 
+	button {
+		padding: 1% 3%;
+		.table-grey();
+		border-radius: 5px;
+
+		&:hover {
+			color: @hover-color;
+		}
+	} // end of button
+} // end of intro-content
+
+
+// SECTION ONE
+.section-one {
+	margin: @main-margin;
+	margin-top: 4%;
+	display: flex;
+	justify-content: space-around;
+
+	@media (max-width: 500px) {
+		flex-direction: column;
+	}
+
+	h2 {
+		padding-bottom: 2%;
+	}
+
+	.listen-up {
+		width: 50%;
+		padding-right: 2%;
+
+		@media (max-width: 500px) {
+			width: 100%;
+			padding: 4% 0;
+		}
+
+		p {
+			line-height: 1.2;
+		}
+	} // end of listen-up
+	.stuff-im-good-at {
+		width: 50%;
+		padding-left: 2%;
+
+		@media (max-width: 500px) {
+			width: 100%;
+			margin: 4% 0;
+			padding-left: none;
+		}
+
+		.list {
+			border: @border-black;
+
+			p {
+				text-align: center;
+				padding: 2% 0;
+				border-bottom: @border-black;
+
+				&:last-child {
+					border-bottom: none;
+				}
+			} // end of p's
+		} // end of list
+	} // end of stuff-im-good-at
+} // end of section-one
+
+
+// WORK HISTORY SECTION
+.work-history {
+	margin: @main-margin;
+	margin-top: 4%;
+	padding-bottom: 2%;
+}
+.table {
+	display: flex;
+	margin: @main-margin;
+
+	@media (max-width: 500px) {
+		flex-direction: column;
+	}
+  
+	.column-one {
+	  width: 25%;
+
+	  @media (max-width: 500px) {
+		width: 100%;
+		border: @border-grey;
+		margin-bottom: 4%;
+	  }
+  
+	  p {
+		.table-grey-border();
+
+		&:last-child {
+			border-bottom: @border-grey;
+		}
+	  }
+	  .grey {
+		.table-grey();
+	  }
+	}
+	.column-two {
+	  width: 25%;
+
+	  @media (max-width: 500px) {
+		width: 100%;
+		border: @border-grey;
+		margin-bottom: 4%;
+	  }
+  
+	  p {
+		.table-grey-border();
+
+		&:last-child {
+			border-bottom: @border-grey;
+		}
+	  }
+	  .grey {
+		.table-grey();
+		}
+	}
+	.column-three {
+	  width: 25%;
+
+	  @media (max-width: 500px) {
+		width: 100%;
+		border: @border-grey;
+		margin-bottom: 4%;
+	  }
+  
+	  p {
+		.table-grey-border();
+
+		&:last-child {
+			border-bottom: @border-grey;
+		}
+	  }
+	  .grey {
+		.table-grey();
+		}
+	}
+	.column-four {
+	  width: 25%;
+
+	  @media (max-width: 500px) {
+		width: 100%;
+		border: @border-grey;
+		margin-bottom: 4%;
+	  }
+	  
+	  p {
+		.table-grey-border();
+
+		&:last-child {
+			border-bottom: @border-grey;
+		}
+	  }
+	  .grey {
+		.table-grey();
+	  }
+	}
+}
+
+
+// FOOTER
+footer {
+	background-color: @accent-background-color;
+	margin-top: 4%;
+	margin: 4%;
+	padding: 6%;
+
+	@media (max-width: 500px) {
+		margin-top: 8%;
+		padding: 10%;
+	  }
+	p {
+		text-align: center;
+		color: @accent-font-color;
+		line-height: 1.2;
+	}
+} // end of footer
